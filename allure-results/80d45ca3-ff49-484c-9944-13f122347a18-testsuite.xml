@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1680638421994' stop='1680638437981'>
+    <name>Feature My Store: Shopping Cart</name>
+    <title>Feature My Store: Shopping Cart</title>
+    <test-cases>
+        <test-case start='1680638423358' status='failed' stop='1680638423367'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read properties of undefined (reading 'navigateTo')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'navigateTo')
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:32:25
+                    at Generator.next (&lt;anonymous>)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:8:71
+                    at new Promise (&lt;anonymous>)
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:4:12)
+                    at Object.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:30:33)
+                    at Object.asyncJestTest (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:116:37)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:35:12
+                    at new Promise (&lt;anonymous>)
+                    at mapper (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:22:19)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1680638423367' status='failed' stop='1680638437726'>
+            <name>Shopping Cart: items added to shopping cart</name>
+            <title>Shopping Cart: items added to shopping cart</title>
+            <labels>
+                <label name='story' value='BOND-102'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: page.waitForSelector: Target closed
+                =========================== logs ===========================
+                waiting for locator('xpath=(//a[@title=\'Dresses\'])[2]') to be visible
+                ============================================================</message>
+                <stack-trace>page.waitForSelector: Target closed
+                =========================== logs ===========================
+                waiting for locator('xpath=(//a[@title=\'Dresses\'])[2]') to be visible
+                ============================================================
+                    at Function.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\mouse-actions.ts:9:35)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\mouse-actions.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\mouse-actions.ts:4:12)
+                    at Function.hover (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\mouse-actions.ts:22:16)
+                    at AddChartShopPage.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\addChartShop.page.ts:33:28)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\addChartShop.page.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\addChartShop.page.ts:4:12)
+                    at AddChartShopPage.clickDress (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\addChartShop.page.ts:33:16)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:40:32
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:4:12)
+                    at Object.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:35:66)
+                    at Object.asyncJestTest (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:116:37)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:35:12
+                    at mapper (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:22:19)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+            <description type='text'>Login into http://automationpractice/index  </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,7 +1,7 @@
 export const TESTDATA = {
 
     //Register Account
-    email:"Taitetuses@outlook.com",
+    email:"Maleycis@outlook.com",
     //CandyNena1985@outlook.com
     lastName:'Caballerp Mendoza',
     gender:"Mr",   // Varon:"id_gender1"  Woman: id_gender2  Mrs ;Mr

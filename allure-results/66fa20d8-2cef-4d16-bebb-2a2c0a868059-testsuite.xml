@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1680635431850' stop='1680635489886'>
+    <name>Feature My Store: Register Account</name>
+    <title>Feature My Store: Register Account</title>
+    <test-cases>
+        <test-case start='1680635433635' status='passed' stop='1680635454922'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1680635454922' status='failed' stop='1680635489638'>
+            <name>Register: the user registers successfully</name>
+            <title>Register: the user registers successfully</title>
+            <labels>
+                <label name='story' value='BOND-103'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                waiting for locator('#id_gender1') to be visible
+                ============================================================</message>
+                <stack-trace>page.waitForSelector: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                waiting for locator('#id_gender1') to be visible
+                ============================================================
+                    at Function.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\element-actions.ts:6:35)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\element-actions.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\element-actions.ts:4:12)
+                    at Function.click (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\core\element-actions.ts:16:16)
+                    at RegisterPage.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\register.page.ts:31:34)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\register.page.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\register.page.ts:4:12)
+                    at RegisterPage.createInformationAccount (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\register.page.ts:37:16)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\register.test.ts:41:28
+                    at fulfilled (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\register.test.ts:5:58)</stack-trace>
+            </failure>
+            <description type='text'>Login into http://automationpractice/index  </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

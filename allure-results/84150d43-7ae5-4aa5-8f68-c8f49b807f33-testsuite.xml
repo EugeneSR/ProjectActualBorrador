@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1680637950130' stop='1680638004205'>
+    <name>Feature My Store: Shopping Cart</name>
+    <title>Feature My Store: Shopping Cart</title>
+    <test-cases>
+        <test-case start='1680637951447' status='failed' stop='1680637981469'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: page.goto: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                navigating to "http://automationpractice.pl/index.php", waiting until "networkidle"
+                ============================================================</message>
+                <stack-trace>page.goto: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                navigating to "http://automationpractice.pl/index.php", waiting until "networkidle"
+                ============================================================
+                    at AddChartShopPage.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\base.page.ts:11:33)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\base.page.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\base.page.ts:4:12)
+                    at AddChartShopPage.navigateTo (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\src\pages\base.page.ts:19:16)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:28:32
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:8:71
+                    at Object.&lt;anonymous>.__awaiter (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:4:12)
+                    at Object.&lt;anonymous> (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\test\shoppingCart.test.ts:26:33)
+                    at Object.asyncJestTest (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:116:37)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:35:12
+                    at mapper (C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:22:19)
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActualBorrador\node_modules\jest-jasmine2\build\queueRunner.js:62:41</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1680637981469' status='passed' stop='1680638003943'>
+            <name>Shopping Cart: items added to shopping cart</name>
+            <title>Shopping Cart: items added to shopping cart</title>
+            <labels>
+                <label name='story' value='BOND-102'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ba61978b-1337-43fc-bdfb-7b7b677acc0d-attachment.png' type='image/png' size='93358'/>
+            </attachments>
+            <description type='text'>Login into http://automationpractice/index  </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

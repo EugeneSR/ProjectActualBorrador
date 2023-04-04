@@ -3,12 +3,11 @@ import { driverInstance } from "../src/core/driver";
 import { AddChartPage } from "../src/pages/addChart.page";
 import { PurchasePage } from '../src/pages/purchase.page';
 import { mainPurchase } from '../src/pages/components/MainPurchasePage';
-//import { TESTDATA } from '../data.app';
 import { LoginPage } from "../src/pages/login.page";
 import dotenv from 'dotenv';
-
 dotenv.config({ path: `.env.test`, override: true });
 
+declare const reporter:any;
 describe('Feature My Stores: Shopping Cart with ', () => {
 
     let addChartPage: AddChartPage;
@@ -31,7 +30,7 @@ describe('Feature My Stores: Shopping Cart with ', () => {
         await driverInstance.closeDriver();
     });
 
-    it('Shopping Cart: items added to shopping items and shp ', async () => {
+    it('Shopping Cart: items added to shopping items and shop ', async () => {
 
         await addChartPage.clickDress();
         await addChartPage.selectCasualDress();
@@ -64,6 +63,7 @@ describe('Feature My Stores: Shopping Cart with ', () => {
         const email = String(process.env.EMAIL); //Parse of variables
         await loginPage.setEmail(email);
         const password = String(process.env.PASS); //Parse of variables
+        
         await loginPage.setPassword(password);
         await loginPage.clickLogin();
         await purchasePage.clickConfirmAdress();
@@ -77,11 +77,17 @@ describe('Feature My Stores: Shopping Cart with ', () => {
 
         await purchasePage.pay();
         await purchasePage.confirmOrderShop();
+
         const messagePurchase = await mainPurchase.showMessageSuccess();
+
+        const screenshotBuffer = await driverInstance.Page.screenshot();
+        reporter.addAttachment("Screenshot", screenshotBuffer, "image/png");
+
 
         //**********************EXPECT*************************************/
         expect(messagePurchase).toContain("Your order on My Store is complete");
         /**********************END *************************************/
+        
 
     });
 

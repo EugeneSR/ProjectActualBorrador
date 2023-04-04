@@ -5,6 +5,8 @@ import dotenv from 'dotenv';
 import { mainHeader } from "../src/pages/components/MainHeaderPage";
 dotenv.config({ path: `.env.test`, override: true });
 
+declare const reporter:any;
+
 describe('Feature My Store: Register Account', () => {
 
     let registerPage: RegisterPage;
@@ -26,6 +28,10 @@ describe('Feature My Store: Register Account', () => {
 
     it('Register: the user registers successfully', async () => {
 
+        reporter
+        .description("Login into http://automationpractice/index  ")  
+        .story("BOND-103");
+
         await registerPage.clickLink();  //Select icon Login, but option register
 
         await registerPage.registerEmail(TESTDATA.email);
@@ -38,8 +44,8 @@ describe('Feature My Store: Register Account', () => {
         await registerPage.clickCreateAccountButton();
 
         const message = await mainHeader.showMessageSuccess();
- 
-       
+        const screenshotBuffer = await driverInstance.Page.screenshot();
+        reporter.addAttachment("Screenshot", screenshotBuffer, "image/png");
     
         await registerPage.showInformation();
 

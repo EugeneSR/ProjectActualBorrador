@@ -1,9 +1,11 @@
 import { mainHeader } from "../src/pages/components/MainHeaderPage";
-import { driverInstance } from "../src/core/driver";
-import { LoginPage } from "../src/pages/login.page";
+import { driverInstance, Driver } from '../src/core/driver';
+import { LoginPage } from '../src/pages/login.page';
 
 import dotenv from 'dotenv';
+
 dotenv.config({ path: `.env.test`, override: true });
+
 declare const reporter:any;
 
 describe('Feature My Store: User logged in', () => {
@@ -35,6 +37,8 @@ describe('Feature My Store: User logged in', () => {
         await loginPage.clickLink();  //Select icon Login
        
         const email = String(process.env.EMAIL); //Parse of variables
+      
+       
 
         //reporter.startStep("Enter email");
         await loginPage.setEmail(email);
@@ -57,6 +61,9 @@ describe('Feature My Store: User logged in', () => {
         expect(value).toEqual("Maria Perez"); // Logged in user name: Maria Perez
         expect(value).not.toEqual(null);
         //**********************END *************************************/
+
+         const screenshotBuffer = await driverInstance.Page.screenshot();
+            reporter.addAttachment("Screenshot", screenshotBuffer, "image/png");
 
     });
 
