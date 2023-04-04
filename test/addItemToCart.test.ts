@@ -33,8 +33,8 @@ describe('Feature My Store: Shopping Cart', () => {
         reporter
         .description("Login into http://automationpractice/index  ")  
         .story("BOND-102");
-        await addChartShopPage.clickDress();
-        await addChartShopPage.selectCasualDress();
+
+        await addChartShopPage.clickDressAd();
         await addChartShopPage.viewDress();
         await addChartShopPage.viewCasualDressP();
 
@@ -44,6 +44,7 @@ describe('Feature My Store: Shopping Cart', () => {
         await addChartShopPage.selectColor();
 
         await addChartShopPage.addItemDress();
+
 
         const screenshotBuffer = await driverInstance.Page.screenshot();
        reporter.addAttachment("Screenshot", screenshotBuffer, "image/png");

@@ -14,12 +14,9 @@ export class AddChartShopPage extends BasePage {
     private optionSize: string = "//span[text()='S']/following-sibling::select";
     private optionColor: string = "#color_13";
     private buttonAddItem: string = "(//button[@type='submit']//span)[3]";
-
     private checkoutItems:string="//span[text()[normalize-space()='Proceed to checkout']]";
-    //"//a[@title='Proceed to checkout']//span[1]";
 
-
-    private stateButton:string = "#id_state";//"//div[ @id='uniform-id_state']";
+    private stateButton:string = "#id_state";
     private stateSelect:string = "/select[@id='id_state']//child::option[1]";
     
     
@@ -31,6 +28,10 @@ export class AddChartShopPage extends BasePage {
 
     async clickDress() {
         await MouseActions.hover(this.optionsDresses);
+      
+    }
+    async clickDressAd() {
+        await ElementActions.click(this.optionsDresses);
       
     }
     async selectCasualDress() {

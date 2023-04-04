@@ -10,7 +10,6 @@ declare const reporter:any;
 
 describe('Feature My Store: User logged in', () => {
 
-
     let loginPage: LoginPage;
 
     beforeAll(async () => {
@@ -33,31 +32,24 @@ describe('Feature My Store: User logged in', () => {
         .description("Login into http://automationpractice/index  ")  
         .story("BOND-101");
 
-        //reporter.startStep("Navigate into site");
+     
         await loginPage.clickLink();  //Select icon Login
-       
         const email = String(process.env.EMAIL); //Parse of variables
+
       
-       
-
-        //reporter.startStep("Enter email");
         await loginPage.setEmail(email);
-        //reporter.endStep();
-
+        
         const password = String(process.env.PASS); //Parse of variables
-        //reporter.startStep("Enter password");
+       
         await loginPage.setPassword(password);
-        //reporter.endStep();
-
-        //reporter.startStep("Click Login");
+       
+        
         await loginPage.clickLogin();
-        //reporter.starStep("Logout")
-        //reporter.endStep();
+      
 
         //**********************EXPECT*************************************/
         const value = await mainHeader.getElementText();//get the logged in username
-
-        //reporter.startStep("Check it's fancy");
+       
         expect(value).toEqual("Maria Perez"); // Logged in user name: Maria Perez
         expect(value).not.toEqual(null);
         //**********************END *************************************/
