@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1680644019268' stop='1680644040017'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1680646944470' stop='1680646965730'>
     <name>Feature My Store: Register Account</name>
     <title>Feature My Store: Register Account</title>
     <test-cases>
-        <test-case start='1680644022864' status='passed' stop='1680644030199'>
+        <test-case start='1680646948771' status='passed' stop='1680646956418'>
             <name>Go To Page</name>
             <title>Go To Page</title>
             <labels/>
@@ -11,7 +11,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1680644030199' status='passed' stop='1680644039746'>
+        <test-case start='1680646956418' status='passed' stop='1680646965432'>
             <name>Register: the user registers successfully</name>
             <title>Register: the user registers successfully</title>
             <labels>
@@ -20,7 +20,7 @@
             <parameters/>
             <steps/>
             <attachments>
-                <attachment title='Screenshot' source='0bc6df6e-2f59-4e6e-bb26-86179f9896e2-attachment.png' type='image/png' size='87296'/>
+                <attachment title='Screenshot' source='ad49664a-4cda-4a95-80fe-d6c04ea6ad27-attachment.png' type='image/png' size='87296'/>
             </attachments>
             <description type='text'>Login into http://automationpractice/index  </description>
         </test-case>
