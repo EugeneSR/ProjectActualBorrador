@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1680626094470' stop='1680626115155'>
+    <name>Feature My Store: User logged in</name>
+    <title>Feature My Store: User logged in</title>
+    <test-cases>
+        <test-case start='1680626098668' status='passed' stop='1680626109772'>
+            <name>Go To Page</name>
+            <title>Go To Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1680626109772' status='failed' stop='1680626114774'>
+            <name>Login: the user is successfully logged in</name>
+            <title>Login: the user is successfully logged in</title>
+            <labels>
+                <label name='story' value='BOND-101'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1680626109773' status='undefined'>
+                    <name>Navigate into http://automationpractice/index site</name>
+                    <title>Navigate into http://automationpractice/index site</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1680626111831' status='passed' stop='1680626112902'>
+                            <name>Enter email </name>
+                            <title>Enter email </title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1680626112902' status='passed' stop='1680626113083'>
+                            <name>Enter password</name>
+                            <title>Enter password</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1680626113083' status='undefined'>
+                            <name>Click Login</name>
+                            <title>Click Login</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: reporter.starStep is not a function</message>
+                <stack-trace>TypeError: reporter.starStep is not a function
+                    at C:\Users\USUARIO\Documents\GitHub\ProjectActual\test\login.test.ts:50:18
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (C:\Users\USUARIO\Documents\GitHub\ProjectActual\test\login.test.ts:5:58)
+                    at runNextTicks (node:internal/process/task_queues:60:5)
+                    at processImmediate (node:internal/timers:447:9)</stack-trace>
+            </failure>
+            <description type='text'>Login into http://automationpractice/index  </description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
