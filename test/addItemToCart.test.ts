@@ -8,7 +8,6 @@ import { TESTDATA } from '../data.app';
 dotenv.config({ path: `.env.test`, override: true });
 declare const reporter:any;
 
-
 describe('Feature My Store: Shopping Cart', () => {
 
     let addChartShopPage: AddChartShopPage;

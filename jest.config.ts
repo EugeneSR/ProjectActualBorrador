@@ -3,6 +3,8 @@
  * https://jestjs.io/docs/configuration
  */
 
+import { availableParallelism } from "os";
+
 export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -193,6 +195,7 @@ export default {
   // Whether to use watchman for file crawling
   // watchman: true,
   testRunner: 'jasmine2',
-  setupFilesAfterEnv: ["jest-allure/dist/setup"]
+  setupFilesAfterEnv: ["jest-allure/dist/setup"],
+  
 };
 

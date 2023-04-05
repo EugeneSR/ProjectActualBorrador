@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1680659184573' stop='1680659214373'>
+    <name>Feature My Stores: Shopping Cart with </name>
+    <title>Feature My Stores: Shopping Cart with </title>
+    <test-cases>
+        <test-case start='1680659194231' status='passed' stop='1680659213912'>
+            <name>Shopping Cart: items added to shopping items and shop </name>
+            <title>Shopping Cart: items added to shopping items and shop </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='7d90beeb-c705-4d55-909f-8c533e32747e-attachment.png' type='image/png' size='93433'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
